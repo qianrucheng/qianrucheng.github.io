@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* NAVIGATION */
+
+.nav-container {
+    background: white;
+    height: 75px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav .logo {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 35px;
+    color: black;
+}
+
+
+.nav-items li {
+    list-style: none;
+    margin-right: 100px;
+}
+
+.nav-items li:nth-last-of-type(1) {
+    margin-right: 0;
+}
+
+.nav-items li a {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+   
+}
+
+.underline::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: width .3s;
+}
+
+.underline:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+/* BODY */
+
+.body-container {
+    background: white url("images/background.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    height: calc(100vh - 72px);
+    display: flex;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 74px;
+    display: flex;
+    align-items: center;
+    color: black;
+    width: 545px;
+    margin-bottom: 24px;
+}
+
+header p {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 42px;
+    color: black;
+    width: 449px;
+    margin-bottom: 0;
+}
+
+.social-icons {
+    list-style: none;
+    display: inline-flex;
+    align-items: left;
+}
+.social-icons a {
+    margin: 40px;
+    display: inline-flex;
+    transition: 400ms;
+}
+
+.social-icons a:nth-of-type(1) {
+    margin-left: -6px;
+}
+
+.fiverr:hover {
+    transform: translateY(-10px);
+}
+
+.upwork:hover {
+    transform: translateY(-10px);
+}
